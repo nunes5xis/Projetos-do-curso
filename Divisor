@@ -1,0 +1,22 @@
+algoritmo "Divisor"
+var
+   C, N, ContDiv: inteiro
+inicio
+      C <- 1
+      ContDiv <- 0
+      escreva("digite um numero: ")
+      Leia(N)
+      Repita
+            escreva(C)
+            Se (N % C = 0 ) entao
+               ContDiv <- ContDiv + 1
+            FimSe
+            C <- C + 1
+      Ate (C > N)
+      Se (ContDiv > 2) entao
+         escreval(" o valor ", N , " nao e primo")
+         senao
+         escreva(" o valor ", N, " e primo")
+         fimSe
+
+fimalgoritmo
