@@ -1,4 +1,4 @@
-algoritmo "doação"
+algoritmo "doaÃ§Ã£o"
 var
 
    nome:caractere
