@@ -1,0 +1,14 @@
+algoritmo "semnome"
+var
+   N, S:inteiro
+   resp : caractere
+inicio
+      repita
+           escreva("Digite o valor :")
+           leia(N)
+           S <- S + N
+           escreva ("voce quer continuar? [S/N]")
+           leia (resp)
+           ate (resp = "N")
+      escreval(" a soma de todos os numero foi de ", S)
+fimalgoritmo
