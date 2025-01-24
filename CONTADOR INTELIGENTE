@@ -1,0 +1,29 @@
+algoritmo "CONTADOR INTELIGENTE"
+var
+   n1, n2: inteiro
+   
+inicio
+
+      escreva("inicio: ")
+      leia(n1)
+      escreva("fim:")
+      leia(n2)
+      
+      
+      se (n1 < n2) entao
+        enquanto (n1 < n2 + 1)faca
+        escreva(n1, "..")
+        n1 <- n1+ 1
+        fimEnquanto
+        
+      senao
+      
+       se (n1 > n2) entao
+        Enquanto (n1 >= n2) faca
+        escreva (n1, "..")
+        n1 <- n1 - 1
+        
+                    fimEnquanto
+               fimse
+          fimse
+fimalgoritmo
