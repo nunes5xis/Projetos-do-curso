@@ -9,7 +9,7 @@ inicio
       leia(n2)
 
       media <- (n1+ n2) /2
-      escreval(" sua media é", media, "seu aproveitamento e de ", aprov)
+      escreval(" sua media Ã©", media, "seu aproveitamento e de ", aprov)
       se (media >=10) e (media <9) entao
        escrevaL("A")
         senao
