@@ -1,0 +1,16 @@
+algoritmo "semnome"
+var
+   cont, N, R : inteiro
+   
+inicio
+
+      cont <- 1
+      escreva("qual o numero você quer multiplicar?")
+      leia(N)
+      repita
+            R <- N * Cont
+           escrevaL(N ,"x", cont, "=", R )
+            cont <- cont + 1
+      ate (cont > 10)
+
+fimalgoritmo
