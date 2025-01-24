@@ -1,0 +1,28 @@
+algoritmo "AULA 11"
+var
+ cont , N: inteiro
+inicio
+      escreval ("[1] de 1 a 10")
+      escreval ("[2] de 10 a 1")
+      escreval ("[3] SAIR")
+      Leia (N)
+      Escolha(N)
+      Caso 1
+           cont  <- 1
+                 Repita
+                 EscrevaL(Cont, "...")
+                 Cont <- Cont + 1
+           Ate(cont > 10)
+        
+      caso 2
+           cont  <- 10
+                 Repita
+                 EscrevaL(Cont, "...")
+                 Cont <- Cont - 1
+           Ate(cont < 1)
+
+      caso 3
+           Cont <- 3
+            escrevaL("SAINDO ...")
+      FimEscolha
+fimalgoritmo
