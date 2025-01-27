@@ -1,0 +1,14 @@
+algoritmo "Impar e Par"
+var
+   CONT, V : inteiro
+inicio
+
+      ESCREVA("DIGITE UM VALOR:")
+      LEIA(V)
+      Se (V % 2= 1) entao
+      V <- V + 1
+      FimSe
+      PARA CONT <- V ATE 0 passo -2 FACA
+           ESCREVA(CONT)
+      FIMPARA
+fimalgoritmo
