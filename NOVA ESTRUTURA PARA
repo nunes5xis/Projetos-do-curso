@@ -1,0 +1,12 @@
+algoritmo "PARA"
+var
+   C : INTEIRO
+   
+   
+inicio
+
+      Para C <- 1  ate 10 faca
+          escrevaL(C)
+      FimPara
+
+fimalgoritmo
