@@ -1,41 +1,37 @@
 algoritmo "EXERCICIOAULA011"
 var
    Sexo, resp : caractere
-   idade, cabelo : inteiro
+   idade, cabelo, TotM, TotF : inteiro
 inicio
 
       REPITA
 
       escreva("QUAL O SEXO? [M/F]")
       leia(sexo)
-      
+
       escreva("QUAL A IDADE? ")
       leia(idade)
-      
+
       escrevaL("QUAL A COR DO CABELO")
       escreval ("[1] PRETO")
       escreval ("[2] CASTANHO")
       escreval ("[3] LOIRO")
       escreval ("[4] RUIVO")
       Leia (cabelo)
-      escolha(cabelo)
 
-            Caso 1
-           cabelo <- 1
-      caso 2
-           cabelo <- 2
-      caso 3
-           cabelo <- 3
-      Caso 4
-           cabelo <- 4
-      FimEscolha
-
-                Se(Sexo = M) e (idade >18) entao
-                
-
+        Se(Sexo = "M") e (idade >= 18) e (Cabelo = 2) entao
+         TotM <- ToTM + 1
+        senao
+             se (Sexo = "F") e (idade >= 25) e (idade <=30) e (Cabelo = 3) entao
+             TotF <- TotF + 1
+        FimSe
+        FimSe
 
       escreva("QUER CONTINUAR? [S/N]")
       leia(resp)
       ate(resp = "N")
       LimpaTela
+      
+   EscrevaL("O Total de homens com mais de 18 anos e cabelos castanhos é: ",TotM)
+   EscrevaL("O Total de mulheres entre 25 e 30 anos e loiras é: ",Tot F   )
 fimalgoritmo
