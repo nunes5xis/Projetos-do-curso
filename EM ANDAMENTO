@@ -1,0 +1,36 @@
+algoritmo "semnome"
+var
+   Cont, S, N, V, Par : inteiro
+   M : real
+inicio
+
+      Cont <- 0
+
+     Escreva("Digite o 1o. Valor: ")
+     leia(N)
+     Escreva("Digite o 2o. Valor: ")
+     leia(N)
+     Escreva("Digite o 3o. Valor: ")
+     leia(N)
+     Escreva("Digite o 4o. Valor: ")
+     leia(N)
+     Escreva("Digite o 5o. Valor: ")
+     leia(N)
+
+      enquanto (cont <= S ) faca
+        EscrevaL(cont)
+
+        cont <- cont + N
+        M <- cont /5
+        FimEnquanto
+
+         Se (N%2=0) entao
+            PAR <- PAR + N
+         FimSe
+
+        V <- Cont + V
+
+        escrevaL("a soma dos numeros é", cont )
+        escrevaL("a media dos numero é", M )
+        escrevaL("a soma dos numeros pares é", Par )
+fimalgoritmo
