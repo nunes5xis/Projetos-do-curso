@@ -1,0 +1,16 @@
+algoritmo "semnome"
+var
+   C, N1, N2, S: INTEIRO
+   
+inicio
+      N1 <- 0
+      N2 <- 1
+      S <- 0
+      PARA C <- 1 ATE 13 FACA
+           S <- N1 + N2
+           ESCREVA (s)
+           N1 <- N2
+           N2 <- S
+      FIMPARA
+
+fimalgoritmo
