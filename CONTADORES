@@ -1,0 +1,38 @@
+algoritmo "semnome"
+var
+   Cont, S, N, Par, NUL, CDIV : inteiro
+   M : real
+inicio
+
+
+      S <- 0
+      Par <- 0
+      Cont <- 1
+      Cdiv <- 0
+
+     Para cont <- 1 ate 5  faca
+     Escreva("Digite o", cont, "o. valor: ")
+     leia(N)
+        S <- S + N
+
+        Se (N%2=0) entao
+          PAR <- PAR + N
+        FimSe
+
+        Se (N=0) entao
+           NUL <- NUL + 1
+        FIMSE
+
+        Se (N % 5 = 0 ) entao
+           CDiv <- CDiv + 1
+        FimSe
+        
+        FimPara
+        
+        M <- S / (Cont - 1)
+        escrevaL("a soma dos numeros é", S )
+        escrevaL("a media dos numero é", M )
+        escrevaL("a soma dos numeros pares é", Par )
+        ESCREVAL("Os valores nulos são", NUL)
+        Escreval("o total de numeros que dividem por 5 é: ", CDIV)
+fimalgoritmo
