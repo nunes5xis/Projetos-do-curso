@@ -1,0 +1,30 @@
+algoritmo "semnome"
+var
+   I : inteiro
+   N, Pesado: caractere
+   P, Mai: real
+Procedimento topo()
+Inicio
+      limpatela
+       escrevaL("---------------------------------")
+       EscrevaL("D E T E C T O R D E P E S O")
+       EscrevaL("Maior peso até agora", mai, "Kg ")
+       escrevaL("---------------------------------")
+FimProcedimento
+inicio
+       Topo()
+       Para I <- 1 ate 2 faca
+       escreva("digite seu nome: ")
+       leia(N)
+       escreva("digite seu peso: ")
+       leia(P)
+       Se (P>mai) entao
+          Mai <- P
+           Pesado <- N
+              FimSe
+              LimpaTela
+              Topo()
+              Fimpara
+       Topo()
+       Escreva(" a pessoa mais pesada foi ", pesado, " com ", mai, " quilos.")
+fimalgoritmo
