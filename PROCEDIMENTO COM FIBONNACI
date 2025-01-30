@@ -1,0 +1,21 @@
+algoritmo "semnome"
+var
+   C, N1, N2, S: INTEIRO
+Procedimento ProximoFibo (var A, B: inteiro)
+var C: inteiro
+Inicio
+      C := A + B
+      ESCREVA (C)
+      A := B
+      B := C
+FimProcedimento
+inicio
+      N1 <- 0
+      escreva(N1)
+      N2 <- 1
+      escreva(N2)
+      PARA C <- 3 ATE 10 FACA
+          ProximoFibo(N1, N2)
+      FIMPARA
+
+fimalgoritmo
