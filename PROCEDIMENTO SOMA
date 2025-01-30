@@ -1,0 +1,16 @@
+algoritmo "semnome"
+var
+   x, y :inteiro
+   
+Procedimento Soma (A, B: inteiro)
+Inicio
+             EscrevaL("Recebi o valor", A)
+             EscrevaL("Recebi o valor", B)
+             EscrevaL("a soma dos valores é", A + B)
+FimProcedimento
+inicio
+
+      X <- 9
+      Y <- 8
+      Soma (X, Y)
+fimalgoritmo
