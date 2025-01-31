@@ -1,0 +1,19 @@
+algoritmo "semnome"
+var
+   V1, V2, S: inteiro
+Funcao Soma(X, Y : inteiro): inteiro
+inicio
+       retorne X + Y
+FimFuncao
+inicio
+
+      Escreva("1.o valor: ")
+        leia(V1)
+      Escreva("2.o valor: ")
+      leia(V2)
+      
+      S <- Soma (V1, V2)
+      
+      Escreva("o resultado vai ser ", S)
+
+fimalgoritmo
