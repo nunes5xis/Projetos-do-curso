@@ -1,0 +1,22 @@
+algoritmo "semnome"
+var
+   N: inteiro
+   R: caractere
+Funcao ParouImpar(V: inteiro): caractere
+Inicio
+      Se(V%2 = 0) entao
+             retorne " PAR "
+      senao
+           retorne" IMPAR "
+      fimse
+
+FimFuncao
+inicio
+      escreva("digie um numero: ")
+      leia(N)
+      R <- ParOuImpar (N)
+      escreva("o seu numero é um valor", R)
+      
+
+
+fimalgoritmo
