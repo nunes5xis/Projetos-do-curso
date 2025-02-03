@@ -1,0 +1,24 @@
+algoritmo "semnome"
+var
+   N, F: inteiro
+   
+funcao fatorial (v:inteiro): inteiro
+var
+   C, R: inteiro
+inicio
+
+   R <- 1
+   Para C <- 1 ate V faca
+        R <- R * C
+   FimPara
+   Retorne R
+   
+fimfuncao
+inicio
+
+      escreva("digite um numero: ")
+      leia(n)
+      F <- Fatorial (N)
+      escreva("a fatorial de ", N, " e ", F )
+
+fimalgoritmo
