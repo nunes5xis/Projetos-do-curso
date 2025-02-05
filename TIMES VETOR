@@ -1,0 +1,24 @@
+algoritmo "semnome"
+var
+
+   time: vetor [1..3] de caractere
+   c, h: inteiro
+
+inicio
+
+      para c <- 1 ate 3 faca
+      escreva("digite o time ")
+      leia(time [c])
+      fimpara
+
+      para c <- 1 ate 3 faca
+      para h <- 1 ate 3 faca
+        se(c<>h)entao
+          escrevaL(time[c] ,"[] X []", time[h])
+
+
+
+            fimse
+         fimpara
+      fimpara
+fimalgoritmo
