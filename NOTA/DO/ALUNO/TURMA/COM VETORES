@@ -1,0 +1,53 @@
+algoritmo "semnome"
+var
+   NOME: vetor [1..3] de caractere
+   GABA : vetor [1..5] de caractere
+   NOTA: vetor [1..5] de real
+   RESP : vetor [1..5] de caractere
+   SNALUNO: vetor [1..5] de real
+   SNTURMA, SNOTA : real
+   i, c : inteiro
+inicio
+
+      para c <- 1 ate 5 faca
+      escrevaL("GABARITO: ")
+      leia(GABA[c])
+      fimpara
+      LimpaTela
+      
+      para i <- 1 ate 3 faca
+      escreva("NOME DO ALUNO: ")
+      leia(NOME[i])
+
+      
+      para c <- 1 ate 5 faca
+      escreva("RESPOTAS DADAS: ")
+      leia(resp[c])
+      fimpara
+      
+      para c <- 1 ate 5 faca
+      Se(GABA[c] <> RESP[c]) entao
+         NOTA[c] <- 0
+      senao
+        NOTA[C] <- 2
+      fimse
+      SNOTA <- SNOTA + NOTA[c]
+      FIMPARA
+      
+      LIMPATELA
+      
+      SNALUNO[I] <- SNOTA
+      SNTURMA <- SNTURMA + SNALUNO [I]
+      SNOTA <- 0
+      
+      FIMPARA
+      
+      SNTURMA <- SNTURMA / I
+      
+      para i <- 1 ate 3 faca
+      escrevaL("ALUNO ", NOME[I], " TEVE A NOTA DE: ", SNALUNO[I])
+      FIMPARA
+      
+      ESCREVAL("MEDIA DA TURMA ", SNTURMA)
+
+fimalgoritmo
