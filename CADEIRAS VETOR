@@ -1,0 +1,52 @@
+algoritmo "semnome"
+var
+   Cadeira: vetor [1..10] de inteiro
+   RSV: vetor [1..10] de inteiro
+   cad, reser: inteiro
+   NCad: caractere
+
+inicio
+
+      para cad <- 1 ate 10 faca
+      cadeira[cad] <- cad
+      fimpara
+      
+      para reser <- 1 ate 10 faca
+      RSV [reser] <- 0
+      fimpara
+      
+      repita
+       para cad <- 1 ate 10 faca
+       se (RSV[cad] = 0) entao
+          escrevaL("[B ", cad,"]")
+       senao
+            escrevaL("[--]")
+       fimse
+       fimpara
+       
+       escreva("qual cadeira você quer reservar?")
+       leia(reser)
+       
+       Se (RSV[reser]=0 ) entao
+          escrevaL("cadeira reservada!")
+       senao
+          escrevaL("cadeira indisponivel!!, tente outra")
+       fimse
+       
+       RSV[reser] <- 1
+       escrevaL("gostaria de reservar outra cadeira? [s/n]: ")
+       leia(Ncad)
+       limpatela
+       ate(Ncad = "N")
+       
+       escrevaL("obrigado por nos escolher")
+       
+       para reser <- 1 ate 10 faca
+         se(RSV[cad] = 1) entao
+           escrevaL("[B",cad[reser],"]")
+       fimse
+       fimpara
+
+
+
+fimalgoritmo
