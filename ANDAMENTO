@@ -1,0 +1,71 @@
+algoritmo "semnome"
+var
+   m: vetor[1..4, 1..4] de inteiro
+   l, c : inteiro
+   menu: caractere
+   
+Procedimento Ini()
+inicio
+      Escreval("[ 1 ] Mostra a Matriz")
+      Escreval("[ 2 ] Diagonal Principal")
+      Escreval("[ 3 ] Triangulo Superior")
+      Escreval("[ 4 ] Triângulo Inferior")
+      Escreval("[ 5 ] Sair")
+FimProcedimento
+inicio
+
+      para l <- 1 ate 4 faca
+           para c <- 1 ate 4 faca
+             escreva("digite o valor da posicao [", l, ",", c, "]: ")
+             leia(m[l,c])
+           fimpara
+      fimpara
+      
+      EscrevaL()
+      
+      LimpaTela
+      
+      Ini()
+      escreva("opções  ==>")
+      leia(menu)
+
+      LimpaTela
+      
+      para l <- 1 ate 4 faca
+           para c <- 1 ate 4 faca
+           escreva(m[l,c]:5)
+           fimpara
+           escrevaL()
+      fimpara
+      
+      para l <- 1 ate 1 faca
+           para c <- 1 ate 1 faca
+           escreva(m[1,1]: 5)
+           fimpara
+           EscrevaL
+           EscrevaL()
+      fimpara
+      para l <- 1 ate 1 faca
+           para c <- 1 ate 1 faca
+           escreva("":5,mat[2,2]: 5)
+           fimpara
+           EscrevaL
+           EscrevaL()
+      fimpara
+           para l <- 1 ate 1 faca
+           para c <- 1 ate 1 faca
+                escreva("":10,m[3,3]: 5)
+           fimpara
+        EscrevaL
+        EscrevaL()
+      fimpara
+           para l <- 1 ate 1 faca
+           para c <- 1 ate 1 faca
+                escreva("":15,m[4,4]: 5)
+           fimpara
+          EscrevaL
+        EscrevaL()
+      fimpara
+
+
+fimalgoritmo
